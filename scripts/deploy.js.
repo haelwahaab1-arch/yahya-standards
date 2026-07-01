@@ -1,0 +1,46 @@
+/**
+ * سكريبت نشر عقد منظومة يحيى المتكاملة v4.0
+ * التنفيذ: بنفخة الإخلاص والشهود
+ * الشبكة المستهدفة: Polygon (Mainnet/Amoy)
+ */
+
+const hre = require("hardhat");
+
+async function main() {
+  console.log("--- بدء بروتوكول النشر: إقامة العدل بالإحسان والحب ---");
+
+  // عنوان المعمار المسؤول (هشام فتحي) الذي سيستلم صلاحيات VISION_ARCHITECT
+  // يتم جلبه من متغيرات البيئة لضمان السيادة والأمان
+  const visionArchitectAddress = process.env.VISION_ARCHITECT_ADDRESS;
+
+  if (!visionArchitectAddress) {
+    console.error("خطأ: لم يتم تحديد عنوان المعمار المسؤول في ملف .env");
+    return;
+  }
+
+  // الحصول على المصنع البرمجي للعقد
+  const YahyaGovernance = await hre.ethers.getContractFactory("YahyaGovernanceV4");
+
+  console.log("جاري نشر العقد... (ذرية طيبة مخرجاتها وصلاً بالمصدر)");
+
+  // نشر العقد مع تمرير عنوان هشام فتحي للمنشئ (Constructor)
+  const yahya = await YahyaGovernance.deploy(visionArchitectAddress);
+
+  // انتظار اكتمال التعدين والشهود على الشبكة
+  await yahya.deployed();
+
+  console.log("--- تم الفتح المبين ---");
+  console.log(`تم نشر عقد يحيى بنجاح على العنوان: ${yahya.address}`);
+  console.log(`المعمار المسؤول المعتمد: ${visionArchitectAddress}`);
+  console.log("الحالة: Live - بروتوكول ترميم الانكسار جاهز للعمل.");
+}
+
+// تنفيذ السكريبت مع معالجة الأخطاء بمبدأ "هذا شعور وليس خطر"
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error("حدث انكسار في عملية النشر، جاري الفحص والترميم:");
+    console.error(error);
+    process.exit(1);
+  });
+

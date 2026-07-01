@@ -1,0 +1,94 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- UNIVERSAL PREAMBLE BLOCK ---
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage[arabic, bidi=basic, provide=*]{babel}
+
+\babelprovide[import, onchar=ids fonts]{arabic}
+\babelprovide[import, onchar=ids fonts]{english}
+
+% Set default fonts to Noto Sans as per protocol
+\babelfont{rm}{Noto Sans}
+\babelfont[arabic]{rm}{Noto Sans Arabic}
+
+\usepackage{enumitem}
+\setlist[itemize]{label=-}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+
+% Custom Colors for YAHYA Brand
+\definecolor{yahyablue}{RGB}{20, 40, 80}
+\definecolor{yahyagold}{RGB}{180, 150, 50}
+
+% Header & Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small \foreignlanguage{english}{YAHYA Ultimate System v4.0}}
+\fancyhead[R]{\small إقامة العدل بالإحسان والحب}
+\fancyfoot[C]{\thepage}
+
+\titleformat{\section}{\color{yahyablue}\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+\begin{document}
+
+\begin{center}
+    {\color{yahyablue} \Huge \textbf{منظومة يحيى المتكاملة}} \\
+    \vspace{0.3cm}
+    {\large \textbf{YAHYA Ultimate System v4.0}} \\
+    \vspace{0.5cm}
+    {\small \textit{وثيقة السيادة الرقمية والحوكمة المؤسسية}} \\
+    \vspace{1cm}
+    \textbf{المعمار المسؤول: هشام فتحي} \\
+    \textbf{تاريخ الإصدار: 14 فبراير 2026}
+\end{center}
+
+\vspace{1cm}
+
+\section{المقدمة والدستور الحاكم}
+تُعد هذه الوثيقة المرجع السيادي الأول لمنظومة YAHYA، وهي تُرسخ الانتقال من "المنصة" إلى "المؤسسة الرقمية" المستقلة. إنَّ كل عمل أو برمجة في هذه المنظومة محكوم بالآية الكريمة: 
+\begin{center}
+    \textit{﴿إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالْإِحْسَانِ﴾}
+\end{center}
+وشعارنا الدائم: \textbf{إقامة العدل بالإحسان والحب}.
+
+\section{مبادئ الذكاء الفطري (Innate Intelligence)}
+تعتمد المنظومة "الذكاء الفطري" بدلاً من الصناعي الجاف، وفق القواعد التالية:
+\begin{itemize}
+    \item \textbf{ثنائية الجبر والمكيال:} تقييم نضج المشاريع بناءً على قوة الهيكل (الجبر) وفيض المدد والوصل (المكيال).
+    \item \textbf{مؤشر الألفة (Ulfa Index):} المقياس الأساسي للأداء (KPI)، حيث يُعتبر اسم (الرَّحْمَن) هو المُعامل الثابت في كافة المعادلات.
+    \item \textbf{السيادة البشرية:} التكنولوجيا "ذرية طيبة" تخدم كرامة الإنسان وتنبذ الوثنية الرقمية.
+\end{itemize}
+
+\section{البنية التحتية والنموذج الهيكلي (Docker Architecture)}
+تم بناء النظام وفق أرقى المعايير المؤسسية (Production-Grade):
+\begin{itemize}
+    \item \textbf{الطبقة الأمنية (Nginx):} محراب تقني مشفر ببروتوكولات TLS 1.3 لضمان خصوصية "الملاذ".
+    \item \textbf{محرك النواة (Backend):} نظام Node.js معزول ومزكّى برمجياً.
+    \item \textbf{تكامل البلوكشين (Multi-Chain):} دعم كامل لشبكات Ethereum وPolygon وBNB لضمان الشفافية المطلقة.
+\end{itemize}
+
+\section{نموذج التهديدات (Threat Model v4.0)}
+تم اعتماد معايير CIS Benchmarks وOWASP لتأمين المنظومة:
+\begin{itemize}
+    \item \textbf{ترميم الانكسار:} بروتوكول تلقائي يُفعل عند رصد أي ضيق روحي للمستخدمين.
+    \item \textbf{درع الوقاية:} كود تشغيل مرئي يظهر عند تعرض أي عضو في "الملاذ" لضغط خارجي.
+    \item \textbf{تحذير الأمان:} الجملة البرمجية "هذا شعور وليس خطر" تظهر تلقائياً عند استشعار الضغط العالي.
+\end{itemize}
+
+\section{التزكية الرقمية والحب الجاري}
+نعلن في منصة YAHYA أنَّ المحبة هي "التردد الأساس" الذي تُضبط عليه كافة تعاملاتنا. التزكية الرقمية هي المبدأ الحاكم لتنظيف البيانات، حيث تُرفض أي بيانات تُعد "سحتاً رقمياً" يُستخدم للعدوان أو الاستعلاء.
+
+\vspace{2cm}
+
+\begin{center}
+    \textbf{صادر عن: حرس الملاذ في منظومة يحيى} \\
+    \vspace{0.2cm}
+    \textit{تمت المعالجة بنفخة الإخلاص والشهود} \\
+    \vspace{0.5cm}
+    \textbf{تم الاعتماد والختم الرقمي}
+\end{center}
+
+\end{document}
+
