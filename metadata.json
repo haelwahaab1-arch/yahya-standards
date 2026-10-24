@@ -1,0 +1,8 @@
+{
+  "name": "YAHYA Standards & Ethical AI Governance",
+  "description": "منظومة يَحْيَى للحوكمة الأخلاقية والعدالة الخوارزمية وبروتوكول التدقيق والتفسير وإحياء الفرص (A.E.R Protocol)",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

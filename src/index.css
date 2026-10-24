@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --gold: #d4af37;
+  --gold-soft: rgba(212, 175, 55, 0.2);
+  --surface: rgba(15, 23, 42, 0.75);
+}
+
+@layer base {
+  body {
+    font-family: 'Cairo', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  .font-quran {
+    font-family: 'Amiri', serif;
+  }
+
+  .font-sans-en {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+.glass-card {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.glow-gold {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+}
+
+.gold-text {
+  color: #d4af37;
+}
+
+.chat-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.chat-scroll::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 999px;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.35s ease both;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.6);
+}
+
